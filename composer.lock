@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba92d218e7d20f6a7326a198f313be03",
+    "content-hash": "e43d9c81f5c08df36f6cb9097602ea6b",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -119,16 +119,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.7",
+            "version": "4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92"
+                "reference": "ac7b1792641d1fb61cb2901db292903b31694057"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b327faa6feea3a4058178dee7ac8b512bd957e92",
-                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/ac7b1792641d1fb61cb2901db292903b31694057",
+                "reference": "ac7b1792641d1fb61cb2901db292903b31694057",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +152,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-12-06T18:46:46+00:00"
+            "time": "2017-01-26T18:32:19+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -435,15 +435,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.6",
+            "version": "4.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.6"
+                "reference": "tags/4.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -475,15 +475,15 @@
         },
         {
             "name": "wpackagist-plugin/relevanssi",
-            "version": "3.5.6.1",
+            "version": "3.5.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/relevanssi/",
-                "reference": "tags/3.5.6.1"
+                "reference": "tags/3.5.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.6.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -515,15 +515,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.0.2",
+            "version": "4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.0.2"
+                "reference": "tags/4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.0.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
