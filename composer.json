@@ -88,6 +88,7 @@
     "johnpbloch/wordpress": "~4.7",
     "wpackagist-plugin/cyr3lat": "~3.5",
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "~4.9",
+    "wpackagist-plugin/ssl-insecure-content-fixer": "~2.2",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/better-wp-security": "~6.0",
