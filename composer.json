@@ -86,6 +86,8 @@
     "advanced-custom-fields/advanced-custom-fields-pro": "~5.5.3",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "~4.7",
+    "wpackagist-plugin/cyr3lat": "~3.5",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "~4.9",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/better-wp-security": "~6.0",
