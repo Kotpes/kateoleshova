@@ -1,0 +1,15 @@
+footer {
+  margin-top: 4rem;
+  .content {
+    border-top: .1rem solid #eee;
+    padding: 2rem 0;
+  }
+  .widget_black_studio_tinymce {
+    text-align: center;
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 40rem;
+      margin: 0 auto;
+    }
+  }
+}

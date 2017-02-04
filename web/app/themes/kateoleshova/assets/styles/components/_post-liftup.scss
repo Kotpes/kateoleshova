@@ -1,42 +1,40 @@
 body {
   &.home {
-    .first-post {
+    .first-post,
+    .previous-post {
       position: relative;
       flex-basis: 100%;
-      min-height: 30rem;
+      min-height: 40rem;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
-      border-bottom: 1px solid white;
+      background-position: center 20%;
+      border: 1px solid white;
+      @media (min-width: 991px) {
+        transform: scale(1, 1) translateZ(0);
+        backface-visibility: hidden;
+        transition: .15s ease-in;
+        will-change: transform;
+        &:hover {
+          transform: scale(1.01, 1.01);
+          z-index: 3;
+        }
+      }
       a {
         text-decoration: none;
       }
       .post-date {
         flex-basis: 25%;
         color: white;
-        font-size: 1.6rem;
+        font-size: 2rem;
         line-height: normal;
         &__date {
           text-transform: uppercase;
         }
         &__year {
-          font-size: 2.2rem;
+          font-size: 3.2rem;
         }
       }
-      .darken-image {
-        z-index: 1;
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top:0;
-        left:0;
-        background-color: fade_out(black,.7);
-        transition: .2s ease-in;
-        &:hover {
-          background-color: fade_out(black,.6);
-        }
-      }
+      @extend .darken-image;
       .post-date,
       .post-title,
       .post-categories,
@@ -56,7 +54,7 @@ body {
       .post-details {
         position: absolute;
         bottom: 1rem;
-        right: 1rem;
+        padding-right: 1rem;
         width: 100%;
         align-items: flex-end;
         justify-content: flex-end;
@@ -67,8 +65,9 @@ body {
           text-transform: uppercase;
           text-align: right;
           color: white;
-          font-size: 2.4rem;
+          font-size: 3.6rem;
           font-weight: bold;
+          margin-bottom: 0;
         }
       }
       .post-categories {
@@ -79,10 +78,11 @@ body {
           margin: 0;
           list-style: none;
           li {
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, .5);
             display: inline-block;
             color: white;
             text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 1.2rem;
             &:not(:last-child) {
               &:after {
                 content: "•";
@@ -111,7 +111,94 @@ body {
 
     .previous-post {
       flex-basis: 50%;
-      border: 1px solid white;
+      min-height: 30rem;
+      .post-content {
+        .post-date {
+          line-height: 2rem;
+          &__date {
+            font-size: 2rem;
+          }
+          &__year {
+            font-size: 2.8rem;
+          }
+        }
+        .post-title {
+          h2 {
+            font-size: 2.6rem;
+          }
+        }
+      }
+      .post-categories {
+        flex-basis: 100%;
+        ul {
+          li {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .post-liftup {
+        justify-content: center;
+      }
+      .first-post,
+      .previous-post {
+        flex-basis: 100%;
+        .post-categories {
+          flex-basis: 100%;
+        }
+      }
+      .previous-post {
+        min-height: 25rem;
+      }
+    }
+    @media (max-width: 575px) {
+      .first-post,
+      .previous-post {
+        .post-content {
+          .post-date,
+          .post-title {
+            flex-basis: 100%;
+            margin-bottom: .5rem;
+            h2 {
+              text-align: center;
+              font-size: 2.8rem;
+            }
+          }
+          .post-date {
+            display: flex;
+            justify-content: center;
+            order: 2;
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            &__date {
+              margin-right: .5rem;
+            }
+            &__year {
+              font-size: inherit;
+            }
+          }
+          .post-title {
+            order: 1;
+          }
+        }
+      }
+    }
+    @media (max-width: 450px) {
+      .first-post,
+      .previous-post {
+        &.post-liftup {
+          display: flex;
+          align-items: center;
+        }
+        .post-content {
+          .post-title {
+            h2 {
+              font-size: 2.2rem;
+            }
+          }
+        }
+      }
     }
   }
 }
