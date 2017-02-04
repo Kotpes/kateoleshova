@@ -49,6 +49,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support('post-thumbnails');
+    add_image_size( 'first-post-liftup', 1280, 1280 );
+    add_image_size( 'previous-post-liftup', 600, 600 );
 
     /**
      * Enable HTML5 markup support
@@ -61,6 +63,15 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     add_theme_support('customize-selective-refresh-widgets');
+
+    /**
+     * Adds header image
+     */
+    $args = array(
+        'default-image' => get_template_directory_uri() . '/assets/images/main-logo.png',
+        'uploads'       => true,
+    );
+    add_theme_support( 'custom-header', $args );
 
     /**
      * Use main stylesheet for visual editor

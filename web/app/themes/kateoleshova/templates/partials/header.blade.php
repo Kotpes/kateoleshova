@@ -7,7 +7,7 @@
     @endif
     <div class="site-logo">
       <a class="brand" href="{{ home_url('/') }}">
-        <img src="{{ get_stylesheet_directory_uri() }}/dist/images/main-logo.png" alt="Site logo">
+        <img src="@php(header_image())" alt="Site logo">
       </a>
     </div>
   </div>
