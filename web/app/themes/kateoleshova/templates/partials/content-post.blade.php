@@ -6,9 +6,9 @@
 @endphp
 
 @if(has_post_thumbnail())
-    <div class="{{$post_type}}" style="background-image: url( @php(the_post_thumbnail_url($featured_image)) );">
+    <div class="{{$post_type}} post-liftup" style="background-image: url( @php(the_post_thumbnail_url($featured_image)) );">
 @else
-    <div class="{{$post_type}} no-image">
+    <div class="{{$post_type}} post-liftup no-image">
 @endif
     <a href="@php(the_permalink())" class="block-link">
         <div class="darken-image"></div>
