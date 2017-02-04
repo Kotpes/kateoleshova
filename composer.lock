@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1af1682cb3bf50e8174e90598782db7a",
+    "content-hash": "1c83cbd9adba0f41c7045120542ca8a6",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -374,26 +374,6 @@
             "type": "wordpress-plugin"
         },
         {
-            "name": "wpackagist-plugin/ajax-thumbnail-rebuild",
-            "version": "1.12",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/ajax-thumbnail-rebuild/",
-                "reference": "tags/1.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ajax-thumbnail-rebuild.1.12.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/ajax-thumbnail-rebuild/"
-        },
-        {
             "name": "wpackagist-plugin/better-wp-security",
             "version": "6.0.0",
             "source": {
@@ -514,6 +494,26 @@
             "homepage": "https://wordpress.org/plugins/posts-to-posts/"
         },
         {
+            "name": "wpackagist-plugin/regenerate-thumbnails",
+            "version": "2.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
+                "reference": "tags/2.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
+        },
+        {
             "name": "wpackagist-plugin/relevanssi",
             "version": "3.5.7.1",
             "source": {
@@ -555,15 +555,15 @@
         },
         {
             "name": "wpackagist-plugin/ssl-insecure-content-fixer",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ssl-insecure-content-fixer/",
-                "reference": "tags/2.2.2"
+                "reference": "tags/2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ssl-insecure-content-fixer.2.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/ssl-insecure-content-fixer.2.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -595,15 +595,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.1",
+            "version": "4.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.1"
+                "reference": "tags/4.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -615,15 +615,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.4.8",
+            "version": "1.4.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.4.8"
+                "reference": "tags/1.4.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -637,16 +637,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.7.1",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f"
+                "reference": "86dd55a522238211f9f3631e3361703578941d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9b324f3a1132459a7274a0ace2e1b766ba80930f",
-                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/86dd55a522238211f9f3631e3361703578941d9a",
+                "reference": "86dd55a522238211f9f3631e3361703578941d9a",
                 "shasum": ""
             },
             "require": {
@@ -711,7 +711,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-11-30T04:02:31+00:00"
+            "time": "2017-02-02T03:30:00+00:00"
         },
         {
             "name": "wpackagist-plugin/debug-bar-console",
