@@ -1,4 +1,5 @@
 @import "common/variables";
+@import "common/partials";
 
 // Import npm dependencies
 @import "~font-awesome/scss/font-awesome";
@@ -11,6 +12,7 @@
 @import "components/wp-classes";
 @import "components/header";
 @import "components/post-liftup";
+@import "components/footer";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

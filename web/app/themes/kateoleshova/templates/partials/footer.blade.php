@@ -1,5 +1,7 @@
-<footer class="content-info">
-  <div class="container">
-    @php(dynamic_sidebar('sidebar-footer'))
-  </div>
-</footer>
+@if(is_active_sidebar('sidebar-footer'))
+  <footer class="content-info container">
+    <div class="content">
+      @php(dynamic_sidebar('sidebar-footer'))
+    </div>
+  </footer>
+@endif
