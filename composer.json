@@ -102,7 +102,7 @@
     "wpackagist-plugin/wordpress-seo": "~4.0",
     "wp-sync-db/wp-sync-db": "dev-master",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
-    "wpackagist-plugin/ajax-thumbnail-rebuild": "~1.12"
+    "wpackagist-plugin/regenerate-thumbnails": "2.2.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
@@ -113,7 +113,7 @@
     "wpackagist-plugin/rewrite-rules-inspector": "dev-trunk",
     "wpackagist-plugin/p3-profiler": "dev-trunk",
     "wpackagist-plugin/wpdbspringclean": "dev-trunk",
-    "wpackagist-plugin/ajax-thumbnail-rebuild": "~1.12"
+    "wpackagist-plugin/regenerate-thumbnails": "2.2.6"
   },
   "extra": {
     "installer-paths": {
