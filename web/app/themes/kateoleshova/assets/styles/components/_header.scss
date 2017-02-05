@@ -1,8 +1,9 @@
 header {
   &.banner {
     .site-logo {
+      text-align: center;
       .brand {
-        display: block;
+        display: inline-block;
         img {
           display: block;
           margin: 2rem auto;

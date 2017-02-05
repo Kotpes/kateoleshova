@@ -4,9 +4,10 @@
 @extends('layouts.base')
 
 @section('content')
+
   @while(have_posts()) @php(the_post())
 
-    @if( $first_post || is_sticky() )
+    @if( !is_paged() && ($first_post || is_sticky()) )
         @include('partials.content-post', ['post_type' => 'first-post', 'featured_image' => 'first-post-liftup'])
         @php($first_post = false)
     @else
@@ -14,4 +15,9 @@
     @endif
 
   @endwhile
+
+  @if(get_next_posts_link() != NULL)
+     @include('partials.pagination')
+  @endif
+
 @endsection
