@@ -8,6 +8,9 @@ import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
 
+/** Import 3d party libs **/
+import 'jscroll/jquery.jscroll.min';
+
 /**
  * Populate Router instance with DOM routes
  * @type {Router} routes - An instance of our router
