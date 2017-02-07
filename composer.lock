@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c83cbd9adba0f41c7045120542ca8a6",
+    "content-hash": "c01530988b81ed8c10a3ff4610456a4a",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -454,6 +454,26 @@
             "homepage": "https://wordpress.org/plugins/cyr3lat/"
         },
         {
+            "name": "wpackagist-plugin/glue-for-yoast-seo-amp",
+            "version": "0.3.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/glue-for-yoast-seo-amp/",
+                "reference": "tags/0.3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/glue-for-yoast-seo-amp.0.3.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/glue-for-yoast-seo-amp/"
+        },
+        {
             "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
             "version": "4.9.6",
             "source": {
@@ -472,6 +492,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
+        },
+        {
+            "name": "wpackagist-plugin/pagefrog",
+            "version": "1.0.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pagefrog/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pagefrog.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pagefrog/"
         },
         {
             "name": "wpackagist-plugin/posts-to-posts",
