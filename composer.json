@@ -105,7 +105,8 @@
     "wpackagist-plugin/regenerate-thumbnails": "~2.2",
     "wpackagist-plugin/glue-for-yoast-seo-amp": "~0.3",
     "wpackagist-plugin/pagefrog": "~1.0",
-    "wpackagist-plugin/amp": "~0.4"
+    "wpackagist-plugin/amp": "~0.4",
+    "wpackagist-plugin/ewww-image-optimizer": "~3.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
