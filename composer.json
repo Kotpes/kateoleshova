@@ -102,7 +102,9 @@
     "wpackagist-plugin/wordpress-seo": "~4.0",
     "wp-sync-db/wp-sync-db": "dev-master",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
-    "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
+    "wpackagist-plugin/regenerate-thumbnails": "~2.2",
+    "wpackagist-plugin/glue-for-yoast-seo-amp": "~0.3",
+    "wpackagist-plugin/pagefrog": "~1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
