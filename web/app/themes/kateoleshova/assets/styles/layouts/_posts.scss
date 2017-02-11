@@ -1,0 +1,9 @@
+body {
+  &.single-post {
+    .post-slides {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,8 +1,5 @@
 export default {
   init() {
-    // JavaScript to be fired on the home page
-  },
-  finalize() {
       $('.content').jscroll({
           autoTrigger: true,
           loadingHtml: '<div class="spinner">' +
@@ -15,6 +12,12 @@ export default {
           padding: 20,
           nextSelector: '.more a',
           contentSelector: '.main',
+          callback: () => {
+              $('.jscroll-added .main').addClass('show');
+          },
       });
+  },
+  finalize() {
+
   },
 };
