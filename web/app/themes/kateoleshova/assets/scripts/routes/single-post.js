@@ -1,32 +1,27 @@
 export default {
     init() {
        $('.post-slides .slider').slick({
-           adaptiveHeight: true,
-           infinite: true,
+           dots: true,
+           infinite: false,
            speed: 300,
-           arrows: false,
+           arrows: true,
            slidesToShow: 1,
            slidesToScroll: 1,
-           //centerMode: true,
-           //variableWidth: true,
-           asNavFor: '.slider-nav',
+           draggable: true,
+           centerMode: true,
+           variableHeight: true,
+           variableWidth: true,
+           responsive: [
+               {
+                   breakpoint: 768,
+                   settings: {
+                       centerMode: false,
+                       arrows: false,
+                       variableWidth: false,
+                   },
+               },
+           ],
        });
-        $('.post-slides .slider-nav').slick({
-            slidesToShow: 9,
-            slidesToScroll: 1,
-            asNavFor: '.post-slides .slider',
-            dots: true,
-            focusOnSelect: true,
-            centerMode: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-            ],
-        });
     },
     finalize() {
 

@@ -51,7 +51,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
     add_image_size( 'first-post-liftup', 1280, 1280 );
     add_image_size( 'previous-post-liftup', 600, 600 );
-    add_image_size( 'slider-thumb', 150, 150, ['center', 'center'] );
+    add_image_size( 'slider-thumb', 100, 100, ['center', 'center'] );
 
     /**
      * Enable HTML5 markup support

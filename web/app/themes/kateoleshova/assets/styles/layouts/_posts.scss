@@ -1,8 +1,123 @@
 body {
   &.single-post {
+    .post-header {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50rem;
+      background-position: center;
+      margin-bottom: 4rem;
+      .post-meta {
+        z-index: 2;
+        position: relative;
+        color: white;
+        text-align: center;
+        .post-title {
+          color: white;
+          font-size: 4.2rem;
+          font-weight: bold;
+          text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+        }
+        .author {
+          margin-bottom: 0;
+          font-weight: bold;
+        }
+      }
+      @media (max-width: 575px) {
+        //align-items: center;
+        padding: 2rem 1rem;
+        height: 40rem;
+        .post-meta {
+          .post-title {
+            font-size: 3.4rem;
+          }
+          .author {
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+        }
+      }
+      @media (max-width: 450px) {
+        margin-bottom: 2rem;
+        .post-meta {
+          .post-title {
+            font-size: 2.6rem;
+          }
+        }
+      }
+      @media (max-width: 350px) {
+        .post-meta {
+          .post-title {
+            font-size: 2.4rem;
+          }
+
+        }
+      }
+    }
     .post-slides {
+      padding: 2rem 0 3.5rem 0;
+      .post-slide {
+        @media (min-width: 767px) {
+          padding: 0 20px;
+        }
+        img {
+          display: block;
+          max-height: 600px;
+
+        }
+        transition: .2s ease-in;
+        will-change: auto;
+        &:not(.slick-current) {
+          //filter: grayscale(1);
+          opacity: .4;
+          transform: scale(0.9, 0.9);
+        }
+      }
+      .slick-prev,
+      .slick-next {
+        z-index: 1;
+        height: 4rem;
+        width: 4rem;
+        &:before {
+          font-size: 4rem;
+        }
+      }
+      .slick-dots {
+        bottom: -3.5rem;
+        li {
+          button{
+            &:before {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+      .slick-prev {
+        left: 20px;
+      }
+      .slick-next {
+        right: 20px;
+      }
+      .pinterest-element {
+        left: 0;
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+        padding-top:2rem;
+        width: 100%;
+      }
       img {
-        margin: 0 auto;
+        @media (min-width: 550px){
+          margin: 0 auto;
+        }
+      }
+      .slider {
+        margin-bottom: 1rem;
       }
     }
   }

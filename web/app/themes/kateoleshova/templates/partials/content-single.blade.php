@@ -1,7 +1,10 @@
 <article @php(post_class())>
-    <header>
-        <h1 class="entry-title">{{ get_the_title() }}</h1>
-        @include('partials/entry-meta')
+    <header class="post-header" style="background-image: url( @php(the_post_thumbnail_url('first-post-liftup')) );">
+        <div class="darken-image"></div>
+        <div class="post-meta">
+            <h1 class="post-title">{{ get_the_title() }}</h1>
+            @include('partials/entry-meta')
+        </div>
     </header>
 
 
@@ -28,25 +31,20 @@
                     @if ($images)
 
                         <div class="post-slides">
+                            <div class="pinterest-element">
+                                <a data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/">
+                                    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" />
+                                </a>
+                            </div>
                             <div class="slider">
                                 @foreach($images as $image)
 
                                     <div class="post-slide">
-                                        <img src="{{$image['sizes']['large']}}" alt="{{$image['alt']}}" />
+                                        <img data-lazy="{{$image['sizes']['large']}}" alt="{{$image['alt']}}" />
                                     </div>
 
                                 @endforeach
                             </div>
-                            <div class="slider-nav">
-                                @foreach($images as $image)
-
-                                    <div class="post-slide-nav">
-                                        <img src="{{$image['sizes']['slider-thumb']}}" alt="{{$image['alt']}}" />
-                                    </div>
-
-                                @endforeach
-                            </div>
-
                         </div>
 
                     @endif
@@ -60,9 +58,5 @@
         @endif
     </div>
 
-
-    <footer>
-        {!! wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
-    </footer>
     @php(comments_template('/templates/partials/comments.blade.php'))
 </article>
