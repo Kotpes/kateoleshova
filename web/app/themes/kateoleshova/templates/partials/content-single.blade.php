@@ -33,14 +33,14 @@
                         <div class="post-slides">
                             <div class="pinterest-element">
                                 <a data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/">
-                                    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" />
+                                    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png"/>
                                 </a>
                             </div>
                             <div class="slider">
                                 @foreach($images as $image)
 
                                     <div class="post-slide">
-                                        <img data-lazy="{{$image['sizes']['large']}}" alt="{{$image['alt']}}" />
+                                        <img data-lazy="{{$image['sizes']['large']}}" alt="{{$image['alt']}}"/>
                                     </div>
 
                                 @endforeach
@@ -56,6 +56,11 @@
             @endif
 
         @endif
+    </div>
+    <div class="taxonomy-section">
+
+       @php(the_category())
+
     </div>
 
     @php(comments_template('/templates/partials/comments.blade.php'))

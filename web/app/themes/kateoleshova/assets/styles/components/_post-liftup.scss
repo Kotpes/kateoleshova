@@ -1,5 +1,6 @@
 body {
-  &.home {
+  &.home,
+  &.archive {
     .jscroll-added {
       .main {
         transition: .15s;

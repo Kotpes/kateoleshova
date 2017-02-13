@@ -120,5 +120,36 @@ body {
         margin-bottom: 1rem;
       }
     }
+    .taxonomy-section {
+      padding: 2rem 0;
+      .post-categories {
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 0;
+        li {
+          display: inline-block;
+          padding-bottom: 1rem;
+          &:not(:last-child) {
+            padding-right: 1rem;
+          }
+          a {
+            padding: 1rem;
+            background-color: #eee;
+            display: block;
+            font-size: 1.6rem;
+            color: #333;
+            transition: .15s;
+            &:hover {
+              text-decoration: none;
+              background-color: fade_out(#eee, .3);
+            }
+            &:active,
+            &:focus {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
