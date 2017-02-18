@@ -8,6 +8,7 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
+  <meta property="fb:pages" content="171784716646292" />
   @php(wp_head())
   <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </head>

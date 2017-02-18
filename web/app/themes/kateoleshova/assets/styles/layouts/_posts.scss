@@ -9,9 +9,12 @@ body {
       position: relative;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 50rem;
-      background-position: center;
+      height: 60rem;
+      background-position: center 30%;
       margin-bottom: 4rem;
+      .darken-image {
+        background-color: rgba(0,0,0,.2);
+      }
       .post-meta {
         z-index: 2;
         position: relative;
@@ -26,6 +29,9 @@ body {
         .author {
           margin-bottom: 0;
           font-weight: bold;
+        }
+        time {
+          font-size: 1.2rem;
         }
       }
       @media (max-width: 575px) {

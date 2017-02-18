@@ -6,7 +6,7 @@ header {
         display: inline-block;
         img {
           display: block;
-          margin: 2rem auto;
+          padding: 1rem 0;
         }
       }
     }
@@ -19,14 +19,12 @@ header {
     li {
       display: inline-block;
       a {
-        &.facebook {
-
-        }
         display: block;
         border-radius: 50%;
         padding: .5rem;
         svg {
           width: 5rem;
+          fill: $text-color;
         }
         transition: .15s;
         &:hover {
