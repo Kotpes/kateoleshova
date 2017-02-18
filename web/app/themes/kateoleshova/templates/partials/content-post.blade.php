@@ -2,7 +2,7 @@
     $month      = get_the_date("M");
     $date       = get_the_date("j");
     $year       = get_the_date("Y");
-    $categories = get_categories();
+    $categories = get_the_category();
 @endphp
 
 @if(has_post_thumbnail())

@@ -104,9 +104,10 @@
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "wpackagist-plugin/regenerate-thumbnails": "~2.2",
     "wpackagist-plugin/glue-for-yoast-seo-amp": "~0.3",
-    "wpackagist-plugin/pagefrog": "~1.0",
+    "wpackagist-plugin/fb-instant-articles": "3.3.1",
     "wpackagist-plugin/amp": "~0.4",
-    "wpackagist-plugin/ewww-image-optimizer": "~3.2"
+    "wpackagist-plugin/ewww-image-optimizer": "~3.2",
+    "wpackagist-plugin/disqus-comment-system": "~2.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",

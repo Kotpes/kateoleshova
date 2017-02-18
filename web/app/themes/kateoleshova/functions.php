@@ -76,3 +76,22 @@ if (basename($stylesheet = get_option('template')) !== 'templates') {
     wp_redirect($_SERVER['REQUEST_URI']);
     exit();
 }
+
+
+/**
+ * Rewriting number of posts
+ */
+
+function my_post_queries( $query ) {
+	// do not alter the query on wp-admin pages and only alter it if it's the main query
+	if (!is_admin() && $query->is_main_query()){
+
+		// alter the query for category pages
+
+		if(is_category()){
+			$query->set('posts_per_page', 6);
+		}
+
+	}
+}
+add_action( 'pre_get_posts', 'my_post_queries' );

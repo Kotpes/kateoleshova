@@ -10,5 +10,6 @@
         <img src="@php(header_image())" alt="Site logo">
       </a>
     </div>
+    @include('partials.social-links')
   </div>
 </header>

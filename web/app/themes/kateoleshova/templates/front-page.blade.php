@@ -3,21 +3,25 @@
 )
 @extends('layouts.base')
 
-@section('content')
+    @section('content')
+        <main class="main">
 
-  @while(have_posts()) @php(the_post())
+            @while(have_posts()) @php(the_post())
 
-    @if( !is_paged() && ($first_post || is_sticky()) )
-        @include('partials.content-post', ['post_type' => 'first-post', 'featured_image' => 'first-post-liftup'])
-        @php($first_post = false)
-    @else
-        @include('partials.content-post', ['post_type' => 'previous-post', 'featured_image' => 'previous-post-liftup'])
-    @endif
+            @if( !is_paged() && ($first_post || is_sticky()) )
+                @include('partials.content-post', ['post_type' => 'first-post', 'featured_image' => 'first-post-liftup'])
+                @php($first_post = false)
+            @else
+                @include('partials.content-post', ['post_type' => 'previous-post', 'featured_image' => 'previous-post-liftup'])
+            @endif
 
-  @endwhile
+            @endwhile
 
-  @if(get_next_posts_link() != NULL)
-     @include('partials.pagination')
-  @endif
+            @if(get_next_posts_link() != NULL)
+                @include('partials.pagination')
+            @endif
 
-@endsection
+        </main>
+
+    @endsection
+
