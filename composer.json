@@ -66,24 +66,12 @@
           "type": "zip"
         }
       }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.5.3",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU4OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTEyIDA3OjM4OjM4"
-        }
-      }
     }
   ],
   "require": {
     "php": ">=5.6",
     "composer/installers": "~1.0.12",
-    "advanced-custom-fields/advanced-custom-fields-pro": "~5.5.3",
+    "advanced-custom-fields/advanced-custom-fields-pro": "~5.5.4",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "~4.7",
     "wpackagist-plugin/cyr3lat": "~3.5",
@@ -124,8 +112,7 @@
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
-        "wpackagist-plugin/simple-page-ordering",
-        "advanced-custom-fields/advanced-custom-fields-pro"
+        "wpackagist-plugin/simple-page-ordering"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
