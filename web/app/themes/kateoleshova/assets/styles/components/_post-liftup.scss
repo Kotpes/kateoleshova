@@ -1,13 +1,25 @@
 body {
-  &.home {
+  &.home,
+  &.archive {
+    .jscroll-added {
+      .main {
+        transition: .15s;
+        transform: translateY(-10px);
+        opacity: 0;
+        &.show {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
     .first-post,
     .previous-post {
       position: relative;
       flex-basis: 100%;
-      min-height: 40rem;
+      min-height: 50rem;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center 20%;
+      background-position: center 30%;
       border: 1px solid white;
       @media (min-width: 991px) {
         transform: scale(1, 1) translateZ(0);
@@ -15,9 +27,9 @@ body {
         transition: .15s ease-in;
         will-change: transform;
         &:hover {
-          transform: scale(1.02, 1.02);
+          transform: scale(1.01, 1.01);
           z-index: 3;
-          box-shadow: 0 5px 50px rgba(0,0,0,.6);
+          //box-shadow: 0 5px 50px rgba(0,0,0,.6);
           border: 1px solid transparent;
         }
       }
@@ -56,6 +68,7 @@ body {
       .post-details {
         position: absolute;
         bottom: 1rem;
+        left: 0;
         padding-right: 1rem;
         width: 100%;
         align-items: flex-end;

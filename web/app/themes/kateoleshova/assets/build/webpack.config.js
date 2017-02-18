@@ -40,7 +40,7 @@ let webpackConfig = {
         test: /\.css$/,
         include: config.paths.assets,
         loader: ExtractTextPlugin.extract({
-          fallbackLoader: 'style',
+          fallback: 'style',
           publicPath: '../',
           loader: [
             `css?${sourceMapQueryStr}`,
@@ -52,7 +52,7 @@ let webpackConfig = {
         test: /\.scss$/,
         include: config.paths.assets,
         loader: ExtractTextPlugin.extract({
-          fallbackLoader: 'style',
+          fallback: 'style',
           publicPath: '../',
           loader: [
             `css?${sourceMapQueryStr}`,
