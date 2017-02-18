@@ -30,60 +30,11 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "wp-sync-db/wp-sync-db",
-        "version": "dev-master",
-        "type": "wordpress-plugin",
-        "dist": {
-          "url": "https://github.com/wp-sync-db/wp-sync-db/archive/master.zip",
-          "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "wp-sync-db/wp-sync-db-media-files",
-        "version": "dev-master",
-        "type": "wordpress-plugin",
-        "dist": {
-          "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip",
-          "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "polyland/polylang",
-        "version": "2.0.2",
-        "type": "wordpress-plugin",
-        "dist": {
-          "url": "https://polylang.pro/index.php?eddfile=2205%3A1742%3A1%3A1&ttl=1471075527&file=1&token=c61478f440d4bd8c71dd67d4a94d08d7",
-          "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.5.3",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU4OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTEyIDA3OjM4OjM4"
-        }
-      }
     }
   ],
   "require": {
     "php": ">=5.6",
     "composer/installers": "~1.0.12",
-    "advanced-custom-fields/advanced-custom-fields-pro": "~5.5.3",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "~4.7",
     "wpackagist-plugin/cyr3lat": "~3.5",
@@ -97,14 +48,14 @@
     "wpackagist-plugin/black-studio-tinymce-widget": "~2.2",
     "wpackagist-plugin/contact-form-7": "~4.0",
     "wpackagist-plugin/posts-to-posts": "~1.6",
-    "wpackagist-plugin/relevanssi": "~3.4",
+    "wpackagist-plugin/relevanssi": "~3.5",
     "wpackagist-plugin/simple-page-ordering": "2.2.4",
     "wpackagist-plugin/wordpress-seo": "~4.0",
     "wp-sync-db/wp-sync-db": "dev-master",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "wpackagist-plugin/regenerate-thumbnails": "~2.2",
     "wpackagist-plugin/glue-for-yoast-seo-amp": "~0.3",
-    "wpackagist-plugin/fb-instant-articles": "3.3.1",
+    "wpackagist-plugin/fb-instant-articles": "~3.3",
     "wpackagist-plugin/amp": "~0.4",
     "wpackagist-plugin/ewww-image-optimizer": "~3.2",
     "wpackagist-plugin/disqus-comment-system": "~2.8"
@@ -124,8 +75,7 @@
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": [
         "type:wordpress-muplugin",
-        "wpackagist-plugin/simple-page-ordering",
-        "advanced-custom-fields/advanced-custom-fields-pro"
+        "wpackagist-plugin/simple-page-ordering"
       ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
