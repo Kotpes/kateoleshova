@@ -4,19 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "87bdd6d046069c716040d8a5b261958c",
+    "content-hash": "3cbd6157c176cec0c9997167d04c41cf",
     "packages": [
-        {
-            "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.5.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU4OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTEyIDA3OjM4OjM4",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "wordpress-plugin"
-        },
         {
             "name": "composer/installers",
             "version": "v1.0.25",
@@ -354,24 +343,66 @@
         {
             "name": "wp-sync-db/wp-sync-db",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-sync-db/wp-sync-db.git",
+                "reference": "8f18390a83374089acfac202491e78d4938616fd"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db/archive/master.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db/zipball/8f18390a83374089acfac202491e78d4938616fd",
+                "reference": "8f18390a83374089acfac202491e78d4938616fd",
+                "shasum": ""
             },
-            "type": "wordpress-plugin"
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB eliminates the manual work of migrating a WP database.",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db",
+            "keywords": [
+                "db",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2016-04-24T08:56:12+00:00"
         },
         {
             "name": "wp-sync-db/wp-sync-db-media-files",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files.git",
+                "reference": "cebf64eb528532d627284353278b284bb12e7ef1"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/wp-sync-db/wp-sync-db-media-files/archive/master.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://api.github.com/repos/wp-sync-db/wp-sync-db-media-files/zipball/cebf64eb528532d627284353278b284bb12e7ef1",
+                "reference": "cebf64eb528532d627284353278b284bb12e7ef1",
+                "shasum": ""
             },
-            "type": "wordpress-plugin"
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "WP Sync DB Media File Addon for WP Sync DB",
+            "homepage": "https://github.com/wp-sync-db/wp-sync-db-media-files",
+            "keywords": [
+                "media",
+                "plugin",
+                "wordpress",
+                "wp-sync-db"
+            ],
+            "time": "2016-03-07T16:34:12+00:00"
         },
         {
             "name": "wpackagist-plugin/amp",
@@ -515,15 +546,15 @@
         },
         {
             "name": "wpackagist-plugin/fb-instant-articles",
-            "version": "3.3.1",
+            "version": "3.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/fb-instant-articles/",
-                "reference": "tags/3.3.1"
+                "reference": "tags/3.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.3.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/fb-instant-articles.3.3.3.zip",
                 "reference": null,
                 "shasum": null
             },
