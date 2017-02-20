@@ -2,7 +2,7 @@ export default {
     init() {
        $('.post-slides .slider').slick({
            dots: true,
-           infinite: false,
+           infinite: true,
            speed: 300,
            arrows: true,
            slidesToShow: 1,
