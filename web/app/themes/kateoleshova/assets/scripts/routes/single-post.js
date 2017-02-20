@@ -11,6 +11,7 @@ export default {
            centerMode: true,
            variableHeight: true,
            variableWidth: true,
+           lazyLoad: 'progressive',
            responsive: [
                {
                    breakpoint: 768,
