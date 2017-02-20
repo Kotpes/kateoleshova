@@ -10,15 +10,9 @@
 
     <div class="entry-content">
 
-        @if($post->post_content !== '')
+        @if(have_rows('flexible_content'))
 
-            @php(the_content())
-
-        @else
-
-            @if(have_rows('flexible_content'))
-
-                @while(have_rows('flexible_content')) @php(the_row())
+            @while(have_rows('flexible_content')) @php(the_row())
 
                 @if( get_row_layout() == 'general_content_block' )
 
@@ -51,10 +45,12 @@
 
                 @endif
 
-                @endwhile
+            @endwhile
 
-            @endif
+        @elseif($post->post_content !== '')
 
+            @php(the_content())
+            
         @endif
     </div>
     <div class="taxonomy-section">
