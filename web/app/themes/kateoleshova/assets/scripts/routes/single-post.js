@@ -17,7 +17,7 @@ export default {
                    settings: {
                        centerMode: false,
                        arrows: false,
-                       variableWidth: false,
+                       //variableWidth: false,
                    },
                },
            ],
