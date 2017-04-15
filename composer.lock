@@ -112,12 +112,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a"
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
-                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
                 "shasum": ""
             },
             "require": {
@@ -446,15 +446,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "6.1.1",
+            "version": "6.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/6.1.1"
+                "reference": "tags/6.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/better-wp-security.6.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.6.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -466,15 +466,15 @@
         },
         {
             "name": "wpackagist-plugin/black-studio-tinymce-widget",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/black-studio-tinymce-widget/",
-                "reference": "tags/2.3.1"
+                "reference": "tags/2.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/black-studio-tinymce-widget.2.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/black-studio-tinymce-widget.2.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -526,15 +526,15 @@
         },
         {
             "name": "wpackagist-plugin/disqus-comment-system",
-            "version": "2.86",
+            "version": "2.87",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disqus-comment-system/",
-                "reference": "tags/2.86"
+                "reference": "tags/2.87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.2.86.zip",
+                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.2.87.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -586,15 +586,15 @@
         },
         {
             "name": "wpackagist-plugin/glue-for-yoast-seo-amp",
-            "version": "0.3.3",
+            "version": "0.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/glue-for-yoast-seo-amp/",
-                "reference": "tags/0.3.3"
+                "reference": "tags/0.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/glue-for-yoast-seo-amp.0.3.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/glue-for-yoast-seo-amp.0.4.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -666,15 +666,15 @@
         },
         {
             "name": "wpackagist-plugin/relevanssi",
-            "version": "3.5.7.1",
+            "version": "3.5.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/relevanssi/",
-                "reference": "tags/3.5.7.1"
+                "reference": "tags/3.5.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.7.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -766,15 +766,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.4",
+            "version": "4.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.4"
+                "reference": "tags/4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.6.zip",
                 "reference": null,
                 "shasum": null
             },

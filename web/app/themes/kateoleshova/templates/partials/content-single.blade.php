@@ -10,48 +10,12 @@
 
     <div class="entry-content">
 
-        @if(have_rows('flexible_content'))
-
-            @while(have_rows('flexible_content')) @php(the_row())
-
-                @if( get_row_layout() == 'general_content_block' )
-
-                    @php(the_sub_field('general_content'))
-
-                @elseif( get_row_layout() == 'content_slideshow' )
-
-                    @php($images = get_sub_field('slides'))
-
-                    @if ($images)
-
-                        <div class="post-slides">
-                            <div class="pinterest-element">
-                                <a data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/">
-                                    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png"/>
-                                </a>
-                            </div>
-                            <div class="slider">
-                                @foreach($images as $image)
-
-                                    <div class="post-slide">
-                                        <img data-lazy="{{$image['sizes']['large']}}" alt="{{$image['alt']}}"/>
-                                    </div>
-
-                                @endforeach
-                            </div>
-                        </div>
-
-                    @endif
-
-                @endif
-
-            @endwhile
-
-        @elseif($post->post_content !== '')
+        @if($post->post_content !== '')
 
             @php(the_content())
-            
+
         @endif
+
     </div>
     <div class="taxonomy-section">
 
