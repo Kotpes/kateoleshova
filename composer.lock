@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f6e259492a2bcd6da0e268d34993d33",
+    "content-hash": "cd92b51b7f0e8c71817bee63b79fcdf4",
     "packages": [
         {
             "name": "composer/installers",
@@ -623,6 +623,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
+        },
+        {
+            "name": "wpackagist-plugin/jquery-pin-it-button-for-images",
+            "version": "2.2.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/jquery-pin-it-button-for-images/",
+                "reference": "tags/2.2.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/jquery-pin-it-button-for-images.2.2.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/jquery-pin-it-button-for-images/"
         },
         {
             "name": "wpackagist-plugin/posts-to-posts",
