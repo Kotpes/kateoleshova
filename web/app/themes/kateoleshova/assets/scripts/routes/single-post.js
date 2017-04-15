@@ -1,6 +1,6 @@
 export default {
     init() {
-       $('.post-slides .slider').slick({
+       $('.gallery').slick({
            dots: true,
            infinite: true,
            speed: 300,
