@@ -60,7 +60,8 @@
     "wpackagist-plugin/ewww-image-optimizer": "~3.2",
     "wpackagist-plugin/disqus-comment-system": "~2.8",
     "wpackagist-plugin/simple-share-buttons-adder": "~6.3",
-    "wpackagist-plugin/autoptimize": "~2.1"
+    "wpackagist-plugin/autoptimize": "~2.1",
+    "wpackagist-plugin/jquery-pin-it-button-for-images": "~2.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
