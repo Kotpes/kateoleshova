@@ -61,7 +61,8 @@
     "wpackagist-plugin/simple-share-buttons-adder": "~6.3",
     "wpackagist-plugin/autoptimize": "~2.1",
     "wpackagist-plugin/jquery-pin-it-button-for-images": "~2.2",
-    "johnpbloch/wordpress": "^4.7"
+    "johnpbloch/wordpress": "^4.7",
+    "wpackagist-plugin/accelerated-mobile-pages": "~0.9"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
